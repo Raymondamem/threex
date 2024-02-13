@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planetary Jobs 🌎 | Home</title>
+  <script defer src='./public/vendor/three.js/build/three.min.js'></script>
+  <script defer src='./public/js/threex.planets.js'></script>
+  <script defer src='./public/js/threex.atmospherematerial.js'></script>
+  <!-- include for threex.glowdatgui -->
+  <script defer src='./public/vendor/three.js/examples/js/libs/dat.gui.min.js'></script>
+  <script defer src="./public/js/threex.atmospheredatgui.js"></script>
+  <link rel="stylesheet" href="./public/styles/style.css">
+</head>
+
+<body style='margin: 0px; background-color: #000000; overflow: hidden;'>
+  <header>
+    <div class="container">
+      <div class="logo"><a href="/">JoinThe.Space</a></div>
+
+      <nav>
+        <a href="#">space jobs</a>
+        <a href="#">articles</a>
+        <a href="#">project</a>
+        <a href="#">contact us</a>
+      </nav>
+
+      <div class="signAdd">
+        <a href="#">login</a>
+        <button>add job</button>
+      </div>
+    </div>
+  </header>
+  <div id="earth-label" class="planet-label" onclick='switchValue(this.innerHTML);'>Earth</div>
+  <div id="moon-label" class="planet-label" onclick='switchValue(this.innerHTML);'>Moon</div>
+  <div id="mars-label" class="planet-label" onclick='switchValue(this.innerHTML);'>Mars</div>
+  <div id="jupiter-label" class="planet-label" onclick='switchValue(this.innerHTML);'>Jupiter</div>
+
+  <div id="model-list" class="model-list">
+    <h3 style="margin-left: 1rem; font-size: 1.3rem; color: white;">Job at <span id="innerJob"></span></h3>
+    <ul>
+      <li>Web Dev</li>
+      <li>SEO gig</li>
+      <li>Backend gig</li>
+      <li>Python</li>
+      <li>Embedded system gig</li>
+    </ul>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
