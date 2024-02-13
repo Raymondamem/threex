@@ -1,3 +1,5 @@
+import * as THREE from './public/vendor/three.js/build/three.min.js';
+
 var THREEx = THREEx || {}
 
 THREEx.Planets = {}
